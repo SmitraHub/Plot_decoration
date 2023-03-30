@@ -20,3 +20,11 @@ fig.subplots_adjust(hspace=0)
 
 >>>>>>>>> Shadded regions <<<<<<<<<
 plt.fill_between(x, y_r - y_e, y_r + y_e, alpha=0.15)
+
+>>>>>>>>> Color bar plot <<<<<<<<<
+colors = np.linspace(0, 100, num=101, endpoint=True)
+plt.scatter(x_values, y_values, c=colors, marker='p', s=50, cmap='viridis', alpha=1.0)
+cbr = plt.colorbar()
+cbr.set_label('Time (ns)', labelpad=20, y=0.45)
+for t in cbr.ax.get_yticklabels():
+     t.set_fontsize(15)
