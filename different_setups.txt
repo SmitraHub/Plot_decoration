@@ -26,6 +26,12 @@ plt.errorbar(x_values, y_values, yerr = y_values_err, fmt='o', color='darkslateb
 fig, ax = plt.subplots(2,1, figsize=(12,5), sharex=True)
 fig.subplots_adjust(hspace=0)
 
+#Adding a plot in the figure which will encapsulate all the subplots with axis showing only
+fig.add_subplot(1, 1, 1, frame_on=False)
+plt.tick_params(labelcolor="none", bottom=False, left=False)
+plt.ylabel(r'$\mathrm{\bigtriangleup E_{i}\;(Kcal/mol)}$')
+plt.xlabel('Residue')
+
 
 
 >>>>>>>>> Shadded regions <<<<<<<<<
