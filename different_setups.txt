@@ -28,7 +28,7 @@ fig.subplots_adjust(hspace=0)
 
 #Adding a plot in the figure which will encapsulate all the subplots with axis showing only
 fig.add_subplot(1, 1, 1, frame_on=False)
-plt.tick_params(labelcolor="none", bottom=False, left=False)
+plt.tick_params(labelcolor="none", bottom=False, left=False, top=False, right=False)
 plt.ylabel(r'$\mathrm{\bigtriangleup E_{i}\;(Kcal/mol)}$')
 plt.xlabel('Residue')
 
