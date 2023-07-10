@@ -19,3 +19,4 @@ plt.rcParams['legend.loc'] = 'best'
 plt.rcParams['legend.markerscale'] = 2
 plt.rcParams['savefig.dpi'] = 400
 plt.rcParams['savefig.bbox'] = 'tight'
+rc('font', weight='bold')
