@@ -2,6 +2,8 @@
 ax = plt.gca()
 ax.set_yticks([0.0, 1.0])
 ax.set_yticklabels(['Absent', 'Present'])
+ax.xaxis.set_minor_locator(matplotlib.ticker.AutoMinorLocator(2))
+ax.yaxis.set_minor_locator(matplotlib.ticker.AutoMinorLocator(2))
 
 
 
