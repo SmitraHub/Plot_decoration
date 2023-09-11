@@ -1,5 +1,10 @@
+import matplotlib
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+
 >>>>>>>>> Change plot axes tick & label's name and positions <<<<<<<<<
-ax = plt.gca()
 ax.set_yticks([0.0, 1.0])
 ax.set_yticklabels(['Absent', 'Present'])
 ax.xaxis.set_minor_locator(matplotlib.ticker.AutoMinorLocator(2))
