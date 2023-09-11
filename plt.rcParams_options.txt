@@ -1,5 +1,5 @@
 
-from matplotlib import rc
+import matplotlib
 import matplotlib.pyplot as plt
 
 
@@ -39,4 +39,4 @@ plt.rcParams['legend.markerscale'] = 1
 plt.rcParams['savefig.dpi'] = 400
 plt.rcParams['savefig.bbox'] = 'tight'
 
-rc('font', weight='bold')
+matplotlib.rc('font', weight='bold')
